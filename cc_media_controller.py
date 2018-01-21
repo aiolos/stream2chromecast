@@ -439,9 +439,9 @@ class CCMediaController():
             if self.volume_status is not None:
                 curr_level = self.volume_status['level']
                 if level == "+":
-                    level = 0.1 + curr_level
+                    level = 0.05 + curr_level
                 elif level == "-":
-                    level = curr_level - 0.1
+                    level = curr_level - 0.05
             
         
         data = {"type":"SET_VOLUME", "volume":{"muted":False, "level":level} }
